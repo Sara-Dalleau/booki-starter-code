@@ -19,7 +19,7 @@
         <header>
             <nav>
                 <img src="images/logo/Booki.png" alt="Logo site booki">
-                <div class="lien-header">
+                  <div class="lien-nav"> 
                     <a href="#">Hébergements</a>
                     <a href="#">Activités</a>
                 </div>
@@ -27,10 +27,17 @@
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre-ville ou en pleine nature</p>
         <form action="" method="get">
-            <label for="rechercher">Rechercher</label>
-            <input type="text" name="rechercher" id="rechercher">
-
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="text" name="rechercher" id="rechercher"
+            placeholder="Marseille, France" size="25" maxlength="20">
+            <button type="submit">
+               <span>Rechercher</span><i class="fa-solid fa-magnifying-glass"></i>
+              </button>
         </form>
+        <div class="icone-et-p">
+            <i class="fa-solid fa-info"></i>
+            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+        </div>
          </header>
         <main>
             <div class="hebergements-and-populaires">
