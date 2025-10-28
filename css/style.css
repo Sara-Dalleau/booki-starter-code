@@ -238,8 +238,7 @@ button {
     flex-direction: row;
     gap: 10px;
     align-items: center;
-    height: 24px;
-    width: auto;
+    margin-top: -40px;
 }
 .icone-et-p i { /* icone information */
     display: flex;
@@ -286,6 +285,8 @@ button .fa-magnifying-glass { /* icone loupe */
   .filtres h2 { 
     align-items: center;
     font-size: 18px;
+    font-weight: 700;
+    margin: 0;
 }
 .filtres button {
     display: flex;
@@ -298,11 +299,19 @@ button .fa-magnifying-glass { /* icone loupe */
     background-color: white;
     color: #000000;
     font-size: 17px;
-    font-weight: 600;
+    font-weight: bold;
     height: 50px;
     width: 175px;
-    margin-top: 35px;
 }
 .filtres button:hover {
     background-color: #DEEBFF;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.titre-p p {
+    margin: 8px 0px 0px 0px;
+    margin-bottom: 20px;
 }
