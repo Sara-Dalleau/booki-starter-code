@@ -3,7 +3,8 @@
     font-family: 'Raleway', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /* permet que la largeur inclue le contenu, le padding et la bordure,
+    pour éviter que l’élément dépasse la taille fixée */
 }
 
 :root {
@@ -28,7 +29,8 @@ body {
     max-width: 1440px;
     padding: 0 50px;
     margin: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /* permet que la largeur inclue le contenu, le padding et la bordure,
+    pour éviter que l’élément dépasse la taille fixée */
 }
 nav {
     margin: 0 auto;
@@ -84,9 +86,69 @@ a {
 
 /****** Hebergements ***********/
 .hebergements {
+    display: flex;
+    flex-direction: column;
     width: 65%;
-}
+    gap: 30px;
 
+}
+.hebergements-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hebergements-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.hebergements-cards .card
+{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 210px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    gap: 4px;
+    overflow: hidden;
+}
+.hebergements-cards img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 124px;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border: 1px solid #FFFFFF;
+    margin:0;
+}
+.hebergements-cards .card-content {
+    display:flex; 
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding-left: 15px;
+    gap: 6px;
+}
+.hebergements-cards .card-rating {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 14px;
+    padding-top: 9px;
+    gap: 2px;
+}
+.hebergements .afficher-plus {
+    display: inline-block; /* pour qu’il se comporte comme un vrai lien */
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+  }
 /****** Populaires ***********/
 .populaires {
     width: 32%;
