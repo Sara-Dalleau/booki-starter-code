@@ -228,11 +228,39 @@ a {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+    .populaires {
+        order: 2;
+    } 
+    .hebergements {
+        order: 1;
+    }
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav img {
+        margin: 0 auto 20px auto;
+    }
+    .lien-nav {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+    }
+    .lien a {
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        border-top: none;
+        border-bottom: 2px solid transparent;
+    }
+
 }
 /* Activité à Marseille */
 
@@ -281,11 +309,13 @@ a {
     padding-left: 15px;
     font-size: 16px;
 }
+/*fin act marseille */
+
 nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start; /* ✅ la clé */
+    align-items: flex-start; 
     height: 80px;
     margin: 0 auto;
     margin-bottom: 35px;
@@ -394,8 +424,8 @@ button .fa-magnifying-glass { /* icone loupe */
     flex-direction: row;
     gap: 10px;
     align-items: center;
-    margin-top: -40px;
-    margin-bottom: 20px;
+    margin-top: 0px;
+    margin-bottom: 40px;
 }
 .icone-et-p i { /* icone information */
     display: flex;
@@ -411,7 +441,7 @@ button .fa-magnifying-glass { /* icone loupe */
     flex-direction: row;
     align-items: center;
     gap: 15px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
   .filtres h2 { 
     align-items: center;
