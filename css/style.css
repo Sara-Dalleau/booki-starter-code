@@ -543,6 +543,7 @@ footer h3 {
     }
     .filtres button {
         width: 100%;
+        border-radius: 15px;
     }
     .icone-et-p {
         padding: 0 20px;
