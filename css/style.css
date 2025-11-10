@@ -476,7 +476,6 @@ footer h3 {
     }
   }
 
-
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     .main-container {
@@ -484,7 +483,8 @@ footer h3 {
     }
     .hebergements-and-populaires, 
     .activite-a-marseille, footer {
-        padding: 0 20px;
+        padding: 0px;
+
     }
 
     nav {
@@ -555,6 +555,10 @@ footer h3 {
         height: 26px;
         width: 35px;
     }
+    .hebergements-and-populaires section {
+        border-radius: 0px;
+        padding: 20px 20px;
+    }
     .populaires {
         order: 1;
     } 
@@ -564,14 +568,71 @@ footer h3 {
     .populaires-cards {
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        justify-content: center;
+    }
+    .populaires .card {
+        width: 335px;
+        height: 150px;
+        border-radius: 20px;
+    }
+    .populaires img {
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+
+    .hebergements .card {
+        width: 335px;
+        height: 210px;
+        gap: 5px;
     }
     .activite-a-marseille .activite-cards {
+        display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 20px;  
+    }
+    .activite-a-marseille {
+        padding: 20px 20px;
+    }
+    .activite-a-marseille .card {
+        width: 315px;
+        height: 200px;
+        border-radius: 20px;
+    }
+    .activite-a-marseille img {
+        width: 315px;
+        height: 140px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
     }
     footer {
         display: flex;
         flex-direction: column;
+        gap: 50px;
+        padding: 30px 20px;
     }
+    .hebergements-and-populaires .hebergements {
+        background-color: transparent;
+    }
+    .hebergements-and-populaires .populaires {
+        background-color: var(--main-bg-color);
+        border-radius: 0;
+        padding: 20px;
+        margin-top: 0px;
+    }
+    
+    .hebergements-cards a:nth-child(1) { 
+        order: 1; }
+    .hebergements-cards a:nth-child(2) { 
+        order: 2; }
+    .hebergements-cards a:nth-child(6) { 
+        order: 3; } 
+    .hebergements-cards a:nth-child(3) { 
+        order: 4; } 
+    .hebergements-cards a:nth-child(4) { 
+        order: 5; } 
+    .hebergements-cards a:nth-child(5) { 
+        order: 6; } 
+
 }
+    
