@@ -403,9 +403,12 @@ footer h3 {
 /************ TABLETTE (<= 1024px) **********/
 @media (max-width: 1024px) {
     .filtres {
+        display: flex;
+        flex-direction: column;
         align-items: flex-start;
         gap: 20px;
       }
+    
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -635,6 +638,7 @@ footer h3 {
     }
     .activite-a-marseille {
         padding: 20px 20px;
+        margin: 0px;
     }
     .activite-a-marseille .card {
         width: 325px;
