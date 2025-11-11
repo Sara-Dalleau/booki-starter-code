@@ -132,7 +132,7 @@ input { /*champs de recherche */
 }
 input::placeholder {
     color: black ;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 14px ;
 }
 button {
@@ -212,7 +212,7 @@ button .fa-magnifying-glass { /* icone loupe */
 /****** HEBERGEMENTS ET POPULAIRES ***********/
 .hebergements-and-populaires {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
     gap: 30px;
     align-items: stretch;
@@ -228,7 +228,7 @@ button .fa-magnifying-glass { /* icone loupe */
 .hebergements {
     display: flex;
     flex-direction: column;
-    width: 900px;
+    width: 100%;
     gap: 30px;
 
 }
@@ -248,7 +248,7 @@ button .fa-magnifying-glass { /* icone loupe */
     display: flex;
     flex-direction: column;
     width: 250px;
-    height: 220px;
+    height: 200px;
     border-radius: 20px;
     overflow: hidden;
 }
@@ -263,7 +263,7 @@ button .fa-magnifying-glass { /* icone loupe */
     align-items: flex-start;
     width: 100%;
     padding-left: 15px;
-    padding-top: 10px;
+    padding-top: 6px;
     gap: 6px;
 }
 .hebergements-cards .card-rating {
@@ -282,7 +282,7 @@ button .fa-magnifying-glass { /* icone loupe */
 /****** POPULAIRES ***********/
 .populaires {
     flex-direction: column;
-    width: 400px;
+    width: 550px;
 }
 
 .populaires-title {
@@ -338,16 +338,17 @@ button .fa-magnifying-glass { /* icone loupe */
 .activite-cards {
     display: flex;
     justify-content: center;
-    gap: 30px;
     width: 100%;
+    gap: 20px;
+    margin: auto;
 }
 .activite-cards .card {
    display: flex;
    flex-direction: column;
    align-items: center;
    height: 440px;
-   width: 300px;
-   gap: 20px;
+   width: 280px;
+   gap: 0px;
    border-top-left-radius: 20px;
    border-top-right-radius: 20px;
    padding: 0;
@@ -355,7 +356,7 @@ button .fa-magnifying-glass { /* icone loupe */
 .activite-cards img {
     height: 380px;
     object-fit: cover;
-    width: 300px;
+    width: 280px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -364,8 +365,9 @@ button .fa-magnifying-glass { /* icone loupe */
     flex-direction: column;
     justify-content: center;
     width: 100%;
+    margin: auto;
     padding-left: 15px;
-    font-size: 16px;
+    font-size: 15px;
 }
 /********** FOOTER *******/
 footer {
@@ -389,7 +391,7 @@ footer h3 {
 }
 /******************** RESPONSIVE DESIGN ***************************/
 
-/*******LARGE DESKTOP (>= 1440px) ********/
+/******* LARGE DESKTOP (>= 1440px) ********/
 @media (max-width: 1440px) {
     .main-container {
         max-width: 1600px;
@@ -562,10 +564,13 @@ footer h3 {
         width: 35px;
     }
     /* Hébergements et populaires */
-
+    .hebergements-and-populaires {
+        padding: 20px 0px;
+        width: 100%;
+    }
     .hebergements-and-populaires section {
         border-radius: 0px;
-        padding: 20px 20px;
+        padding: 20px 45px;
     }
     .hebergements-and-populaires .hebergements {
         background-color: transparent;
@@ -573,7 +578,7 @@ footer h3 {
     .hebergements-and-populaires .populaires {
         background-color: var(--main-bg-color);
         border-radius: 0;
-        padding: 20px;
+        padding: 20px 50px;
         margin-top: 0px;
     }
     .populaires {
@@ -590,7 +595,7 @@ footer h3 {
         justify-content: center;
     }
     .populaires .card {
-        width: 335px;
+        width: 340px;
         height: 150px;
         border-radius: 20px;
     }
@@ -602,7 +607,7 @@ footer h3 {
     /* Hébergements */
 
     .hebergements .card {
-        width: 335px;
+        width: 340px;
         height: 210px;
         gap: 5px;
     }
@@ -619,7 +624,9 @@ footer h3 {
     .hebergements-cards a:nth-child(5) { 
         order: 6; } 
     /* Activité à Marseille */
-
+    .activite-a-marseille h2 {
+        margin: 30px;
+    }
     .activite-a-marseille .activite-cards {
         display: flex;
         flex-direction: column;
@@ -630,12 +637,12 @@ footer h3 {
         padding: 20px 20px;
     }
     .activite-a-marseille .card {
-        width: 315px;
+        width: 325px;
         height: 200px;
         border-radius: 20px;
     }
     .activite-a-marseille img {
-        width: 315px;
+        width: 325px;
         height: 140px;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
