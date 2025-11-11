@@ -615,7 +615,7 @@ footer h3 {
         gap: 5px;
     }
     .hebergements-cards .card-content {
-        padding-top: 4px;
+        padding-top: 1px;
     }
     .hebergements-cards a:nth-child(1) { 
         order: 1; }
