@@ -611,11 +611,11 @@ footer h3 {
 
     .hebergements .card {
         width: 340px;
-        height: 210px;
+        height: 225px;
         gap: 5px;
     }
     .hebergements-cards .card-content {
-        padding-top: 1px;
+        padding-top: 8px;
     }
     .hebergements-cards a:nth-child(1) { 
         order: 1; }
