@@ -3,11 +3,10 @@
     font-family: 'Raleway', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* permet que la largeur inclue le contenu, le padding et la bordure,
-    pour éviter que l’élément dépasse la taille fixée */
+    box-sizing: border-box; /* Inclue la taille des éléments, les bordures et le padding */
 }
 
-:root {
+:root { /* variables couleurs principales du site */
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
@@ -22,13 +21,12 @@ body {
     justify-content: center;
 }
 
-.main-container {
+.main-container {/* conteneur principale (centré, etc)*/
     width: 100%;
-    max-width: 1440px;
+    max-width: 1440px; /* évite que le contenue soit trop étiré sur grands écrans */
     padding: 0 50px;
     margin: 0;
-    box-sizing: border-box; /* permet que la largeur inclue le contenu, le padding et la bordure,
-    pour éviter que l’élément dépasse la taille fixée */
+    box-sizing: border-box;
 }
 a {
     color: inherit;
@@ -150,7 +148,7 @@ button {
     padding: 10px;
 }
 
-button .fa-magnifying-glass { /* icone loupe */
+button .fa-magnifying-glass { /* icone loupe responsive mobile*/
     background-color: transparent;
     color: #FFFFFF;
     font-size: 15px;
@@ -484,7 +482,7 @@ footer h3 {
 /* Formulaire */
 @media screen and (max-width: 768px) {
     button .fa-magnifying-glass {
-      display: inline-flex;
+      display: inline-flex; 
     }
     button span {
       display: none;
