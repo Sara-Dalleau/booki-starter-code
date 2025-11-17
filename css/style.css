@@ -113,7 +113,7 @@ form .fa-location-dot { /* icone localisation */
 input { /*champs de recherche */
     border: none;
     text-align: center;
-    width: 180px;
+    width: 178px;
     height: 46px;
     border-top:1px solid var(--main-bg-color);
     border-bottom:1px solid var(--main-bg-color);
@@ -145,6 +145,12 @@ button .fa-magnifying-glass { /* icone loupe responsive mobile*/
     align-items: center;
     justify-content: center;
     display: none; /* caché par défaut */
+  }
+  .button-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25px;
   }
 /****** FILTRES + ICÔNE INFO ***********/
 
