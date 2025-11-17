@@ -90,32 +90,37 @@ h1 {
 }
 form {
     display: flex;
-    flex-direction: row;
     align-items: center;
     border: 1px solid var(--main-bg-color);
     border-radius: 15px;
-    height: 40px;
-    width: 350px;
+    height: 46px;
+    width: 320px;
     margin-bottom: 20px;
 }
 form i {  /* icone localisation */
     background-color: var(--main-bg-color);
-    height: 44px;
+    height: 46px;
+    width: 49px;
     padding: 14px;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
 }
+form .fa-location-dot { /* icone localisation */
+    display: flex;
+    justify-content: center;
+    color:black;
+}
 input { /*champs de recherche */
     border: none;
     text-align: center;
-    width: 220px;
-    height: 44px;
+    width: 180px;
+    height: 46px;
     border-top:1px solid var(--main-bg-color);
     border-bottom:1px solid var(--main-bg-color);
 }
 input::placeholder {
     color: black ;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 14px ;
 }
 button {
@@ -126,10 +131,10 @@ button {
     background-color: var(--main-color);
     color: white;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 650;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    height: 44px;
+    height: 46px;
     padding: 10px;
 }
 
@@ -139,10 +144,8 @@ button .fa-magnifying-glass { /* icone loupe responsive mobile*/
     font-size: 15px;
     align-items: center;
     justify-content: center;
-    border: none;
-    display: none;
+    display: none; /* caché par défaut */
   }
-
 /****** FILTRES + ICÔNE INFO ***********/
 
   .filtres { /* section filtres */
@@ -480,13 +483,23 @@ footer h3 {
 
 /* Formulaire */
 @media screen and (max-width: 768px) {
-    button .fa-magnifying-glass {
-      display: inline-flex; 
+    .button-form .fa-magnifying-glass {
+        display: inline-flex; 
+        justify-content: center;
+        align-items: center;
+      }
+      .button-form span {
+        display: none;
+      }
+      .button-form {
+          border-radius: 15px;
+          width: 46px;
+          height: 46px;
+          padding: 0;
+          box-shadow: 0px 4px 3px rgba(0,0,0,0.3);
+      }
     }
-    button span {
-      display: none;
-    }
-  }
+    
 @media (max-width: 767.98px) {
     .main-container {
         padding: 0;
@@ -551,7 +564,7 @@ footer h3 {
     }
     .filtres button {
         width: 100%;
-        border-radius: 15px;
+        border-radius: 25px;
     }
     .icone-et-p {
         padding: 0 20px;
@@ -578,7 +591,6 @@ footer h3 {
     .hebergements-and-populaires .populaires {
         background-color: var(--main-bg-color);
         border-radius: 0;
-        padding: 20px 50px;
         margin-top: 0px;
     }
     .populaires {
