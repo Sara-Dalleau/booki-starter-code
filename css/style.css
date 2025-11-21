@@ -248,16 +248,18 @@ button .fa-magnifying-glass { /* icone loupe responsive mobile*/
 }
 .hebergements-cards {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    row-gap: 20px;
+    gap: 20px;
+}
+.hebergements-cards a {
+  display: flex;
+  flex: 1 1 calc(33.333% - 20px);
 }
 .hebergements-cards .card
 {
     display: flex;
     flex-direction: column;
-    width: 30%;
-    min-width: 250px;
+    width: 100%;
     border-radius: 20px;
     overflow: hidden;
 }
@@ -357,16 +359,22 @@ button .fa-magnifying-glass { /* icone loupe responsive mobile*/
     width: 100%;
     gap: 20px;
 }
+.activite-cards a {
+    display: flex;
+    flex: 1 1 0;
+}
 .activite-cards .card {
     display: flex;
     flex-direction: column;
-    flex: 1 1 calc(25% - 20px); 
-    min-width: 0;
-    max-width: 300px;
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 295px;
     min-height: 430px;
     border-radius: 20px;
     padding: 0;
+    overflow: hidden;
 }
+
 .activite-cards img {
     width: 100%;
     height: 380px;
