@@ -663,7 +663,6 @@ footer h3 {
         width: 100%;
         max-width: 340px;
         margin: 0 auto 20px;
-        padding: 0 20px;
         box-sizing: border-box;
     }
     /* Filtres */
@@ -812,3 +811,6 @@ footer h3 {
         padding: 30px 20px;
     }
 }
+
+
+/*fin css*/
