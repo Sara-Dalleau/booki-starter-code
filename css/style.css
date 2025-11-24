@@ -174,7 +174,7 @@ button .fa-magnifying-glass { /* icone loupe responsive mobile*/
 .filtres button:hover {
   background-color: var(--filter-bg-color);
 }
-.icone-et-p { /* icone information + texte */
+.icone-et-p { /* icone information + sous-titre */
   display: flex;
   align-items: center;
   gap: 10px;
@@ -212,13 +212,6 @@ button .fa-magnifying-glass { /* icone loupe responsive mobile*/
   justify-content: space-between;
   gap: 30px;
 }
-.hebergements {
-  width: 65%;
-}
-
-.populaires {
-  width: 35%;
-}
 .hebergements-and-populaires section {
   background-color: var(--main-bg-color);
   border-radius: 20px;
@@ -232,7 +225,6 @@ button .fa-magnifying-glass { /* icone loupe responsive mobile*/
   flex-direction: column;
   width: 100%;
   gap: 30px;
-
 }
 .hebergements-title {
   display: flex;
@@ -246,7 +238,7 @@ button .fa-magnifying-glass { /* icone loupe responsive mobile*/
 }
 .hebergements-cards a {
   display: flex;
-  flex: 1 1 calc(33.333% - 20px);
+  flex: 1 1 30%;
 }
 .hebergements-cards .card
 {
@@ -290,7 +282,6 @@ button .fa-magnifying-glass { /* icone loupe responsive mobile*/
   min-width: 320px;
   box-sizing: border-box;
 }
-
 
 .populaires-title {
   display: flex;
@@ -359,8 +350,8 @@ button .fa-magnifying-glass { /* icone loupe responsive mobile*/
 .activite-cards .card {
   display: flex;
   flex-direction: column;
-  width: 100%;
   box-sizing: border-box;
+  width: 100%;
   max-width: 295px;
   min-height: 430px;
   border-radius: 20px;
@@ -419,14 +410,13 @@ footer h3 {
       width: 100%;
     }
     .filtres-buttons {
-      flex-wrap: nowrap;
       gap: 10px;
       width: 100%;
       padding: 10px;
     }
 
     .filtres button {
-      min-width: 0;
+      min-width: 0; /* permet aux boutons de rétrécir si besoin */
     }
     .filtres h2 {
       flex-direction: column;
@@ -485,7 +475,6 @@ footer h3 {
     .populaires-cards {
       display: flex;
       justify-content: center;
-      flex-wrap: nowrap;
       gap: 20px;
     }
 
@@ -549,7 +538,7 @@ footer h3 {
     display: flex;
     align-items: center;
     position: relative;
-    width: 90%;
+    width: 90%; 
     max-width: 340px;
     margin: 0 auto 20px;
     height: 46px;
@@ -576,7 +565,7 @@ footer h3 {
     border-right: none;
     border-left: none;
     padding-right: 60px;
-    clip-path: inset(0 10px 0 0);
+    clip-path: inset(0 10px 0 0); /* évite que le contenue dépasse*/
   }
 
   .button-form {
