@@ -36,8 +36,6 @@ header {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    margin: 0;
-    padding: 0;
 }
 
 .euro {
@@ -82,7 +80,6 @@ h1 {
 form {
     display: flex;
     align-items: center;
-    border: none;
     border-radius: 15px;
     height: 46px;
     width: 100%;
@@ -140,8 +137,6 @@ button {
 
 button .fa-magnifying-glass { /* icone loupe responsive mobile*/
     display: none; /* caché par défaut */
-    align-items: center;
-    justify-content: center;
     background-color: transparent;
     color: #FFFFFF;
     font-size: 15px;
@@ -163,7 +158,7 @@ button .fa-magnifying-glass { /* icone loupe responsive mobile*/
     font-size: 18px;
     font-weight: 700;
 }
-    .filtres button {
+.filtres button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -175,7 +170,6 @@ button .fa-magnifying-glass { /* icone loupe responsive mobile*/
     font-size: 17px;
     font-weight: bold;
     height: 50px;
-    min-width: 0;
 }
 .filtres button:hover {
     background-color: var(--filter-bg-color);
@@ -292,7 +286,6 @@ button .fa-magnifying-glass { /* icone loupe responsive mobile*/
 }
 /****** POPULAIRES ***********/
 .populaires {
-  flex-direction: column;
   width: 42%;
   min-width: 320px;
   box-sizing: border-box;
@@ -356,7 +349,6 @@ button .fa-magnifying-glass { /* icone loupe responsive mobile*/
 .activite-cards {
     display: flex;
     justify-content: space-between;
-    flex-wrap: nowrap;
     width: 100%;
     gap: 20px;
 }
@@ -421,14 +413,12 @@ footer h3 {
   }
   /*FILTRES*/
     .filtres {
-      display: flex;
       flex-direction: column;
       align-items: flex-start;
       gap: 15px;
       width: 100%;
     }
     .filtres-buttons {
-      display: flex;
       flex-wrap: nowrap;
       gap: 10px;
       width: 100%;
@@ -439,7 +429,6 @@ footer h3 {
         min-width: 0;
     }
   .filtres h2 {
-      display: flex;
       flex-direction: column;
       align-items: flex-start;
   }
@@ -466,7 +455,6 @@ footer h3 {
       min-width: 0;
     }
     .hebergements-cards .card {
-      display: flex;
       flex-direction: column;
       height: 210px;
     }
@@ -496,7 +484,6 @@ footer h3 {
     }
 
     .populaires-cards {
-        display: flex;
         justify-content: center;
         flex-wrap: nowrap;
         gap: 20px;
@@ -506,7 +493,6 @@ footer h3 {
       flex: 1 1 0;
     }
     .populaires-cards .card {
-      display: flex;
       border-radius: 20px;
       height: 150px;
       overflow: hidden;
@@ -522,7 +508,6 @@ footer h3 {
       justify-content: space-between;
     }
       .populaires-cards .card-rating {
-        display: flex;
         gap: 2px;
         margin-top: auto; 
     }
@@ -551,7 +536,6 @@ footer h3 {
       border-top-right-radius: 20px;
     }
     .activite-cards .card-content {
-        display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
@@ -570,9 +554,6 @@ footer h3 {
       max-width: 340px;
       margin: 0 auto 20px;
       height: 46px;
-  }
-    .form-container {
-      position: relative;
   }
 
   form i {
@@ -631,7 +612,7 @@ footer h3 {
         padding: 0 ;
     }
   
-/* Navigation mobile et formulaire */
+/* Navigation mobile */
 
     nav {
         flex-direction: column;
@@ -718,7 +699,7 @@ footer h3 {
     
     .populaires {
       order: 1;
-      min-width: 0 !important;
+      min-width: 0;
       width: 100%;
       padding: 0 20px;
       box-sizing: border-box;
@@ -836,7 +817,7 @@ footer h3 {
         padding: 30px 20px;
     }
 }
-/* Mobile très étroits (280–350px) */
+/* Mobile très étroits */
 @media screen and (max-width: 420px) {
   .main-container {
       padding: 0;
